@@ -3,22 +3,7 @@ $(document).ready(function(){
     $("form#game").submit(function(event){
     event.preventDefault();
 
-    var intNumber = parseInt($("input#number").val());
-
-    $(".showGame").click(function(){
-      $(".view").show();
-      $(".hideGame").show();
-      $(".showGame").hide();
-    });
-
-    $("p.hideGame").click(function(){
-      $(".view").hide();
-      $(".hideGame").hide();
-      $(".showGame").show();
-    });
-
-    $(".out").show();
-
+// Business Logic
     var intNumber = parseInt($("input#number").val());
     var blanks = [];
 
@@ -35,5 +20,24 @@ $(document).ready(function(){
     };
     console.log(blanks);
 
+    blanks.forEach(function(blank){
+      $(".pingpong").after(blank);
+    });
+
+
+// User Interface Logic
+    $(".showGame").click(function(){
+      $(".view").show();
+      $(".hideGame").show();
+      $(".showGame").hide();
+    });
+
+    $("p.hideGame").click(function(){
+      $(".view").hide();
+      $(".hideGame").hide();
+      $(".showGame").show();
+    });
+
+    $(".out").show();
   });
 });

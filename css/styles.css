@@ -11,8 +11,13 @@ body{
 .two{
   float : left;
   background-color: #DDB227;
-  width: 10%;
   height: 5000px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.two p{
+  font-size: 15px;
 }
 .hideGame{
   display: none;
@@ -26,4 +31,7 @@ body{
 }
 .out{
   display: none;
+}
+.styleheading{
+  color: black;
 }
