@@ -11,10 +11,11 @@ body{
 .two{
   float : left;
   background-color: #DDB227;
-  height: 5000px;
+  height: 1000px;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+  margin-right: 50px;
 }
 .two p{
   font-size: 15px;
@@ -22,12 +23,15 @@ body{
 .hideGame{
   display: none;
 }
+.view{
+  display: none;
+}
 .btn{
   background-color: #DDB227;
 }
 .pic{
   float: left;
-  width: 10%;
+  width: 15%;
 }
 .out{
   display: none;

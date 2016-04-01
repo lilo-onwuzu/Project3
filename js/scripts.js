@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-    $("form#game").submit(function(event){
+  $("form#game").submit(function(event){
     event.preventDefault();
 
 // Business Logic
@@ -18,26 +17,28 @@ $(document).ready(function(){
         blanks.push(index);
         };
     };
-    console.log(blanks);
-
-    blanks.forEach(function(blank){
-      $(".pingpong").after(blank);
-    });
-
 
 // User Interface Logic
-    $(".showGame").click(function(){
-      $(".view").show();
-      $(".hideGame").show();
-      $(".showGame").hide();
-    });
+    $("#result li").remove();
 
-    $("p.hideGame").click(function(){
-      $(".view").hide();
-      $(".hideGame").hide();
-      $(".showGame").show();
+    blanks.forEach(function(blank){
+      $("#result").append("<li>"+blank+"</li>");
     });
 
     $(".out").show();
+
+  }); // End of submit event
+
+  $(".showGame").click(function(){
+    $(".view").show();
+    $(".hideGame").show();
+    $(".showGame").hide();
   });
-});
+
+  $("p.hideGame").click(function(){
+    $(".view").hide();
+    $(".hideGame").hide();
+    $(".showGame").show();
+  });
+
+}); // End of document ready event
