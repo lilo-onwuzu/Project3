@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Array Looping and Mapping</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+
+  <body>
+
+    <div class="jumbotron one">
+      <img class="pic" src="img/pic.png">
+      <h1>Ping Pong</h1>
+      <p class="lead">Let's Play!</p>
+      <p class="showGame"><a class="btn btn-lg btn-success" href="#" role="button">Click to Start</a></p>
+      <p class="hideGame"><a class="btn btn-lg btn-success" href="#" role="button">Click to Hide</a></p>
+    </div>
+
+    <div class="jumbotron two">
+      <h3>About Ping Pong</h3>
+    </div>
+
+    <div class="container">
+      <div class="row view">
+
+        <div class="rules">
+          <h4>Rules:</h4>
+          <ul>
+            <ol>Numbers divisible by 3 become "ping"</ol>
+            <ol>Numbers divisible by 5 become "pong"</ol>
+            <ol>Numbers divisible by 3 and 5 become "pingpong"</ol>
+          </ul>
+        </div>
+
+        <form id="game">
+          <div class="form-group">
+            <label for="number">Enter a number here:</label>
+            <input id="number" type="text">
+            <button type="submit" class="btn">Ping Pong!</button>
+          </div>
+        </form>
+
+        <div class="out">
+          <ul span="pingpong">
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="test">
+          <li id="new"></li>
+        </div
+
+      </div>
+    </div>
+  </body>
+</html>

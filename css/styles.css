@@ -1,0 +1,29 @@
+body{
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container{
+  padding-left: 10px;
+}
+.one {
+  background-color: #56A8AE;
+  text-align: center;
+}
+.two{
+  float : left;
+  background-color: #DDB227;
+  width: 10%;
+  height: 5000px;
+}
+.hideGame{
+  display: none;
+}
+.btn{
+  background-color: #DDB227;
+}
+.pic{
+  float: left;
+  width: 10%;
+}
+.out{
+  display: none;
+}
